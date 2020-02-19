@@ -1,0 +1,6 @@
+TODO list:
+    Log in/sign in ( profiles accounts)
+    Chat (w/friends)
+    Game list(library), friendlist
+    Searchbodx - backend firebase (list)
+    Firebase hosting
