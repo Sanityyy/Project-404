@@ -4,4 +4,3 @@ TODO list:
     Game list(library), friendlist
     Searchbox - backend firebase (list)
     Firebase hosting
-    Yeet
