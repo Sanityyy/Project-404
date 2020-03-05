@@ -7,4 +7,3 @@ TODO list:
     Possibly forums page
     Basic transactions
     Video games for the site
-    BURP
