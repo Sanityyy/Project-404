@@ -185,7 +185,7 @@ a {
 }
 
 .info-container {
-  background: #000;
+  background: #34495e;
   transform: translateZ(0) scale(1);
   z-index: 8;
   display: flex;
@@ -257,3 +257,4 @@ a {
     background-size: contain;
   }
 }
+
