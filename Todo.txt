@@ -2,8 +2,6 @@ TODO list:
     Log in/sign in (profiles accounts)
     Chat (w/friends)
     Game list(library), friendlist
-    Searchbox - backend firebase (list)
     Firebase hosting
     Possibly forums page
-    Basic transactions
     Video games for the site
