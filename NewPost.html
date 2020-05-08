@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Project 404: New Post</title>
+    <meta name="description" content="Add a new post" />
+    <link rel="stylesheet" type="text/css" href="skjerm.css">
+</head>
+<body>
+    
+    <div id="header">
+        <div><h1>Project 404: New Post</h1></div>
+      </div>
+      <div id="navigation">
+        <ul>
+          <li><a href="index.html"><button id="home">Home</button></a></li>
+          <li><a href=indexF.html><button id="Innlegg">Forum</button></a></li>
+          <div class="dropdown">
+            <button class="dropbtn">Profile</button>
+            <div class="dropdown-content">
+              <a href="#">Friends</a>
+              <a href="#">Chat</a>
+              <a href="#">Logout</a>
+            </div>
+          </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+          <div id="wrapper">
+            <div id="content-wrapper">
+              <div id="content">
+                <section>
+                  <form id="impForm" onsubmit="registrerInnlegg(event)">
+                      <textarea id="inpTitle" type="text" required placeholder="Title"></textarea>
+                      <textarea id="inpText" type="text" required placeholder="Text"></textarea>
+                      <textarea id="inpUser" type="text" required placeholder="Username"></Textarea>
+                        <label for="category">Choose a category for your post:</label>
+                        <select id="inpCategory" multiple>
+                          <option value="FPS">FPS</option>
+                          <option value="MOBA">MOBA</option>
+                          <option value="Strategy">Strategy</option>
+                          <option value="Tycoon">Tycoon</option>
+                          <option value="Action">Action</option>
+                          <option value="Shooter">Shooter</option>
+                        </select>
+                      <button type="submit">Submit</button>
+                  </form>
+                </section>
+              </div>
+            </div>
+            <div id="sidebar-wrapper">
+              <div id="sidebar">
+                <h6>Posts</h6>
+      <blockquote id="Innlegg">
+        <p id="secFresh">
+          <div id="PostShow"></div>
+        </p>      
+      </blockquote>
+              
+              </div>
+            </div>
+          </div>
+          
+        <div id="footer">
+            <p>Copyright &copy; 2020 Project 404. All rights reserved. </p>
+            <p> Lagd av Stian, Filip og Ulrik</a>. 
+          </div>
+          <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBPOOMDlV6MT6p9EMYyCPi49TpJdpT1YO4",
+    authDomain: "forum-adfb9.firebaseapp.com",
+    databaseURL: "https://forum-adfb9.firebaseio.com",
+    projectId: "forum-adfb9",
+    storageBucket: "forum-adfb9.appspot.com",
+    messagingSenderId: "1058857365066",
+    appId: "1:1058857365066:web:42398fe1b413dc01fd80b3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script src="script.js"></script>
+</body>
+</html>
