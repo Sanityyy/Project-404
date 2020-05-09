@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Browse games!</title>
+    <title>Project 404</title>
     <link rel="stylesheet" href="stylesheets/games.css">
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
 </head>
 <body>
 
-    
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyALuDwNATBX-oA7aEC5sVlmLqwjzsxGvDY",
+    authDomain: "project-404-b6bac.firebaseapp.com",
+    databaseURL: "https://project-404-b6bac.firebaseio.com",
+    projectId: "project-404-b6bac",
+    storageBucket: "project-404-b6bac.appspot.com",
+    messagingSenderId: "427191967050",
+    appId: "1:427191967050:web:ac96c001c5367498b9b5b3"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+    <div class="wrapper">
+        <div class="parallax__group hero-container">
+          
+          <div class="parallax__layer hero-text">
+            <h2>Project 404</h2>
+            <ul>
+              <li><a href="indexF.html">Forums</a></li>
+              <li><a href="games.html">Games</a></li>
+              <li><a href="login.html" class="btn">Get Started Now</a></li>
+            </ul>
+            
+            
+
+            <main></main>
+            <sidebar></sidebar>
+            <main></main>
+            <section></section>
+
+          </div>
+        </div>
+      </div>
+      <script src="javascript\games.js"></script>
 </body>
 </html>
