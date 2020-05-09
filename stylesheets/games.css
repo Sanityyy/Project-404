@@ -210,9 +210,16 @@ section h1{
   text-align: center;
 }
 
+/*
 header > nav {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+}
+*/
+
+header {
+  height: 105px;
+  position: relative;
 }
 
 main {
