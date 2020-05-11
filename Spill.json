@@ -2,19 +2,19 @@
     "Spill" : {
         "spill" : {
             "Cookie Clicker" : {
-                "Navn" : "Cookie Clicker",
+                "Navn" :    "Cookie Clicker",
                 "Creator" : "Stian",
-                "nummer" : "1"
+                "nummer" :  "1"
             },
             "Mario" : {
-                "Navn" : "Mario",
+                "Navn" :    "Mario",
                 "Creator" : "Stian",
-                "nummer" : "2"
+                "nummer" :  "2"
             },
             "Et Eller Annent" : {
-                "Navn" : "Et Eller Annent",
-                "Creator" : "Filip",
-                "nummer" : "3"
+                "Navn" :     "Et Eller Annent",
+                "Creator" :  "Filip",
+                "nummer" :   "3"
             }
         }   
     }
