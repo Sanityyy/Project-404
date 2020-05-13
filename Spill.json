@@ -5,12 +5,13 @@
                 "Navn" :    "Cookie Clicker",
                 "Creator" : "Stian",
                 "nummer" :  "1",
-                "picture" : "./Assets/....png"
+                "picture" : "Assets/cookie.png"
             },
             "Mario" : {
                 "Navn" :    "Mario",
                 "Creator" : "Stian",
-                "nummer" :  "2"
+                "nummer" :  "2",
+                "picture" : "Assets/mario.png"
             },
             "Et Eller Annent" : {
                 "Navn" :     "Et Eller Annent",
