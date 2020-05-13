@@ -1,68 +1,71 @@
 <!DOCTYPE html>
+
 <head>
-<title>Project 404: Forum</title>
-<meta  charset="UTF-8" />
-<meta name="description" content="Join the forum and discuss your favourite games" />
-<link rel="stylesheet" type="text/css" href="skjerm.css">
+  <title>Project 404: Forum</title>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Join the forum and discuss your favourite games" />
+  <link rel="stylesheet" type="text/css" href="skjerm.css">
 
 </head>
+
 <body>
-<div id="header">
-  <h1>Project 404: Forum</h1>
-</div>
-<div id="navigation">
-  <ul>
-    <a href="index.html"><button id="home">Home</button></a>
-    <a href=NewPost.html><button id="Innlegg">New post</button></a>
-  </ul>
-</div>
-<div id="wrapper">
-  <nav> 
-    <button class="button" onclick="VisAlt()">All Posts</button>
-    <button class="button" onclick="VisAction()">All Action Posts</button>
-    <button class="button" onclick="VisMOBA()">All MOBA Posts</button>
-    <button class="button" onclick="VisFPS()">All FPS Posts</button>
-    <button class="button" onclick="VisTycoon()">All Tycoon Posts</button>
-    <button class="button" onclick="VisStrategy()">All Strategy Posts</button>
-    <button class="button" onclick="VisShooter()">All Shooter Posts</button>
-  </nav>
-  <div id="content-wrapper">
-    <div id="content">
-      <h6>Posts</h6>
-      <blockquote id="Innlegg">
-        <p id="secFresh">
-          <div id="PostShow"></div>
-        </p>       
-      </blockquote>
-    </div>
+  <div id="header">
+    <h1>Project 404: Forum</h1>
   </div>
-  
+  <div id="navigation">
+    <ul>
+      <a href="index.html"><button id="home">Home</button></a>
+      <a href=NewPost.html><button id="Innlegg">New post</button></a>
+    </ul>
+  </div>
+  <div id="wrapper">
+    <nav>
+      <button class="button" onclick="VisAlt()">All Posts</button>
+      <button class="button" onclick="VisAction()">All Action Posts</button>
+      <button class="button" onclick="VisMOBA()">All MOBA Posts</button>
+      <button class="button" onclick="VisFPS()">All FPS Posts</button>
+      <button class="button" onclick="VisTycoon()">All Tycoon Posts</button>
+      <button class="button" onclick="VisStrategy()">All Strategy Posts</button>
+      <button class="button" onclick="VisShooter()">All Shooter Posts</button>
+    </nav>
+    <div id="content-wrapper">
+      <div id="content">
+        <h6>Posts</h6>
+        <blockquote id="Innlegg">
+          <p id="secFresh">
+            <div id="PostShow"></div>
+          </p>
+        </blockquote>
+      </div>
+    </div>
 
-<div id="footer">
-  <p>Copyright &copy; 2020 Project 404. All rights reserved. </p>
-  <p> Lagd av Stian, Filip og Ulrik</a>. 
-</div>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+    <div id="footer">
+      <p>Copyright &copy; 2020 Project 404. All rights reserved. </p>
+      <p> Lagd av Stian, Filip og Ulrik</a>.
+    </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBPOOMDlV6MT6p9EMYyCPi49TpJdpT1YO4",
-    authDomain: "forum-adfb9.firebaseapp.com",
-    databaseURL: "https://forum-adfb9.firebaseio.com",
-    projectId: "forum-adfb9",
-    storageBucket: "forum-adfb9.appspot.com",
-    messagingSenderId: "1058857365066",
-    appId: "1:1058857365066:web:42398fe1b413dc01fd80b3"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-</script>
-<script src="script.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyBPOOMDlV6MT6p9EMYyCPi49TpJdpT1YO4",
+        authDomain: "forum-adfb9.firebaseapp.com",
+        databaseURL: "https://forum-adfb9.firebaseio.com",
+        projectId: "forum-adfb9",
+        storageBucket: "forum-adfb9.appspot.com",
+        messagingSenderId: "1058857365066",
+        appId: "1:1058857365066:web:42398fe1b413dc01fd80b3"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
