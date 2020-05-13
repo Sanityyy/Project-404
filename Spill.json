@@ -4,7 +4,8 @@
             "Cookie Clicker" : {
                 "Navn" :    "Cookie Clicker",
                 "Creator" : "Stian",
-                "nummer" :  "1"
+                "nummer" :  "1",
+                "picture" : "./Assets/....png"
             },
             "Mario" : {
                 "Navn" :    "Mario",
@@ -15,6 +16,36 @@
                 "Navn" :     "Et Eller Annent",
                 "Creator" :  "Filip",
                 "nummer" :   "3"
+            },
+            "Filip2" : {
+                "Navn" : "Filip2",
+                "Creator" : "Filip",
+                "nummer" : "4"
+            },
+            "Filip3" : {
+                "Navn" : "Filip3",
+                "Creator" : "Filip",
+                "nummer" : "5"
+            },
+            "Filip4" : {
+                "Navn" : "Filip4",
+                "Creator" : "Filip",
+                "nummer" : "6"
+            },
+            "Filip5" : {
+                "Navn" : "Filip5",
+                "Creator" : "Filip",
+                "nummer" : "7"
+            },
+            "Filip6" : {
+                "Navn" : "Filip6",
+                "Creator" : "Filip",
+                "nummer" : "8"
+            },
+            "Filip7" : {
+                "Navn" : "Filip7",
+                "Creator" : "Filip",
+                "nummer" : "9"
             }
         }   
     }
