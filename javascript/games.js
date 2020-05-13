@@ -5,7 +5,7 @@ let main = document.querySelector("main");
 function visAlleSpill() {
     main.innerHTML = "";
     spill.orderByChild("nummer").on("child_added", visSpill);
-}
+} 
 
 // function (typer spill???)
 
