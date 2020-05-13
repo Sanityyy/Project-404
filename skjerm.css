@@ -1,5 +1,4 @@
-html
-{
+html {
 	margin: 0;
 	padding: 0;
 	color: #000000;
@@ -8,17 +7,39 @@ html
 }
 
 
-h1, h2, h3, h4, h5, h6 { font-weight: normal; margin: 0; padding: 10px 0; color: #779955; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	margin: 0;
+	padding: 10px 0;
+	color: #779955;
+}
 
-h1 { font-size: 32px; }
+h1 {
+	font-size: 32px;
+}
 
-h2 { font-size: 28px; }
+h2 {
+	font-size: 28px;
+}
 
-h3 { font-size: 24px; }
+h3 {
+	font-size: 24px;
+}
 
-h4 { font-size: 20px; }
+h4 {
+	font-size: 20px;
+}
 
-h5, h6 { font-size: 17px; }
+h5,
+h6 {
+	font-size: 17px;
+}
+
 #upvote {
 	width: 20px;
 	background-color: white;
@@ -27,18 +48,18 @@ h5, h6 { font-size: 17px; }
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 }
+
 #downvote {
-  width: 20px;
-  background-color: white;
-  color: black;
-  transition: 0.3s;
+	width: 20px;
+	background-color: white;
+	color: black;
+	transition: 0.3s;
 	-webkit-transition: 0.3s;
 	-moz-transition: 0.3s;
 	text-align: center;
 }
 
-button 
-{
+button {
 	background: #000;
 	color: #FFF;
 	border: 1px solid #000;
@@ -55,11 +76,13 @@ button
 	-moz-transition: 0.3s;
 }
 
-ul, ol, dl, blockquote
-{
+ul,
+ol,
+dl,
+blockquote {
 	color: #999999;
-	margin: 10px 35px; 
-	padding: 10px 30px; 
+	margin: 10px 35px;
+	padding: 10px 30px;
 	line-height: 1.6em;
 	border: 1px solid #1a1a1a;
 	border-top: 10px solid #151515;
@@ -67,42 +90,57 @@ ul, ol, dl, blockquote
 }
 
 
-p { margin: 0; }
-
-ul { list-style-type: square; } 
-
-dt
-{
+p {
 	margin: 0;
-	color: #7799bb;
-	font-size: 10px; 
-	font-weight: bold;
-	padding: 10px 0 2px; 
-	text-transform: uppercase; 
 }
 
-dd { margin: 0; padding: 2px 0 5px; margin-bottom: 5px; border-bottom: 1px dotted #555555; }
+ul {
+	list-style-type: square;
+}
+
+dt {
+	margin: 0;
+	color: #7799bb;
+	font-size: 10px;
+	font-weight: bold;
+	padding: 10px 0 2px;
+	text-transform: uppercase;
+}
+
+dd {
+	margin: 0;
+	padding: 2px 0 5px;
+	margin-bottom: 5px;
+	border-bottom: 1px dotted #555555;
+}
+
 .secInnlegg {
 	display: inline;
 	opacity: 1;
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
-	-webkit-transition: opacity .25s ease-in-out; 
+	-webkit-transition: opacity .25s ease-in-out;
 }
 
-.Innlegg { text-align: right;}
-.secInnlegg:hover { 
+.Innlegg {
+	text-align: right;
+}
+
+.secInnlegg:hover {
 	opacity: 0.75;
 	cursor: pointer;
-  }
-.Innlegg p { text-align: left; }
+}
+
+.Innlegg p {
+	text-align: left;
+}
 
 
 form {
 	color: white;
 }
 
-button:hover{
+button:hover {
 	background: rgba(0, 0, 0, 0);
 	color: black;
 	border: 1px solid #000;
@@ -110,17 +148,15 @@ button:hover{
 }
 
 
-body
-{
+body {
 	margin: 0;
 	float: left;
-	width: 100%; 
+	width: 100%;
 }
 
-#header
-{
-	float: left; 
-	width: 100%; 
+#header {
+	float: left;
+	width: 100%;
 	clear: both;
 	border-top: 10px solid #111111;
 	background: #222222 url(Bilder/hover.gif) top left repeat;
@@ -129,61 +165,55 @@ body
 
 
 
-#navigation
-{
+#navigation {
 	float: left;
-	width: 100%; 
+	width: 100%;
 	clear: both;
 	color: #333333;
 	border-bottom: 5px solid #222222;
-	background: #eeeeee url(Bilder/navigation_bg.gif) top left repeat; 
+	background: #eeeeee url(Bilder/navigation_bg.gif) top left repeat;
 }
 
-#wrapper
-{
+#wrapper {
 	clear: both;
 	float: left;
 	width: 100%;
-	margin: 10px 0; 
+	margin: 10px 0;
 
 }
 
-#content-wrapper
-{
+#content-wrapper {
 	width: 60%;
 	float: left;
 }
 
-#content
-{
+#content {
 	float: left;
 	padding: 0 20px;
 }
 
 
-#sidebar-wrapper
-{
+#sidebar-wrapper {
 	width: 40%;
 	float: left;
 }
 
-#sidebar
-{
+#sidebar {
 	float: left;
 	padding: 0 20px;
 }
 
-#footer
-{
+#footer {
 	clear: both;
 	float: left;
-	width: 100%; 
+	width: 100%;
 	color: #888888;
-	text-align: center; 
+	text-align: center;
 	background-color: #222222;
 	border-top: 1px solid #000000;
 	border-bottom: 10px solid #191919;
 }
+
 #inpTitle {
 	height: 25px;
 }
@@ -196,30 +226,58 @@ body
 	position: relative;
 	font-size: 10px;
 }
+
 textarea {
-	height: 300px;
+	height: 100px;
 	width: 100%;
 }
 
-#header h1 { padding: 20px; }
+#header h1 {
+	padding: 20px;
+}
 
-#navigation ul { float: left; list-style-type: none; margin: 0; padding: 0; background: none; border-width: 0; overflow: hidden; }
+#navigation ul {
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: none;
+	border-width: 0;
+	overflow: hidden;
+}
 
-#navigation li { float: left; }
+#navigation li {
+	float: left;
+}
 
-#footer p { margin: 15px 0; }
+#footer p {
+	margin: 15px 0;
+}
 
-#footer a:link { color: #888888; font-weight: bold; border-bottom: 1px dotted #888888; } 
+#footer a:link {
+	color: #888888;
+	font-weight: bold;
+	border-bottom: 1px dotted #888888;
+}
 
-#footer a:visited { color: #666666; font-weight: bold; border-bottom: 1px dotted #666666; }
+#footer a:visited {
+	color: #666666;
+	font-weight: bold;
+	border-bottom: 1px dotted #666666;
+}
 
-#footer a:hover, #footer a:active { color: #999999; border-bottom: 1px solid #999999; }
+#footer a:hover,
+#footer a:active {
+	color: #999999;
+	border-bottom: 1px solid #999999;
+}
 
 #username {
 	background-color: white;
 	color: black;
 	float: right;
 }
+
 .dropbtn {
 	background-color: white;
 	color: black;
@@ -233,54 +291,53 @@ textarea {
 	margin-left: 1vw;
 	display: inline-block;
 	width: 22vw;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
 	position: relative;
 	display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	z-index: 4;
 	right: 0;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 	text-align: right;
-  }
+}
 
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-	  background-color: #f1f1f1
-	}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
 	display: block;
-  }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
 	background-color: #333333;
 	color: white;
-  }
- 
-  a {
+}
+
+a {
 	padding-left: 5px;
-  }
-  
-  /* some simple transitions to make the upvote and downvote
+}
+
+/* some simple transitions to make the upvote and downvote
   buttons fade in as a visual cue for the user */
-  
