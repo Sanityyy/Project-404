@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <title>Firebase Chat</title>
   <style>
@@ -20,15 +21,19 @@
     * {
       overflow-x: hidden;
     }
+
     #divChat {
-      display:none;
+      display: none;
     }
+
     #loginButton {
-      display:block;
+      display: block;
     }
+
     #logoutButton {
       display: none;
     }
+
     .buttonStyle {
       background: #000;
       color: #FFF;
@@ -45,12 +50,14 @@
       -webkit-transition: 0.3s;
       -moz-transition: 0.3s;
     }
+
     .buttonStyle:hover {
-      background:rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 1);
       color: #000;
       border: 1px solid #000;
       cursor: pointer;
     }
+
     .messageStyle {
       width: 95vw;
       border: 2px solid #dedede;
@@ -61,12 +68,13 @@
       margin-left: auto;
       margin-right: auto;
 
-      word-break:break-all;
+      word-break: break-all;
     }
   </style>
 </head>
+
 <body>
-<!--
+  <!--
   <div id="login_div" class="main-div">
     <h3>Firebase Login</h3>
     <input type="text" placeholder="Username..." id="name" />
@@ -85,11 +93,11 @@
   </div>
 -->
 
-<button class="buttonStyle" id="loginButton" onclick="login()">Sign in with Google Account</button>
-<button class="buttonStyle" id="logoutButton" onclick="logout()">Logout</button>
-<h1>Hello <span id="clientName"></span></h1>
-<img id="clientPhoto" src="">
-<!--<p id="testUsername">test: </p>-->
+  <button class="buttonStyle" id="loginButton" onclick="login()">Sign in with Google Account</button>
+  <button class="buttonStyle" id="logoutButton" onclick="logout()">Logout</button>
+  <h1>Hello <span id="clientName"></span></h1>
+  <img id="clientPhoto" src="">
+  <!--<p id="testUsername">test: </p>-->
 
 <!--this is a test! requires localhost w/game files ->XAMPP htdocs-->
 <h1><a href="http://localhost/PinballGameTIP/index.html">Pinball Game</a></h1>
@@ -98,118 +106,120 @@
     <h1>chat</h1>
     <form id="skjema">
 
-      <ins><storng><b>Skriv en melding:</b></strong></ins>
+      <ins>
+        <storng><b>Skriv en melding:</b></strong>
+      </ins>
       <!--<input type="text" id="inpAvsender" required placeholder="Hvem er du?">-->
 
       <input type="text" id="inpMening" required placeholder="Hva sier du?">
-      
+
       <button type="submit" class="button">Send melding</button>
-      
-      </form>
-      
-      <article class="messageStyle" id="txtMeldinger"></article>
+
+    </form>
+
+    <article class="messageStyle" id="txtMeldinger"></article>
 
     </form>
   </div>
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
+  <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyDHJR3JXrY5J2U13_oGmzpoaYyRhsvWato",
-    authDomain: "superchat-login-site.firebaseapp.com",
-    databaseURL: "https://superchat-login-site.firebaseio.com",
-    projectId: "superchat-login-site",
-    storageBucket: "superchat-login-site.appspot.com",
-    messagingSenderId: "278349844290",
-    appId: "1:278349844290:web:e3bcbb5098adf92dc982db"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
-  <script >
-  let database = firebase.database();
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyDHJR3JXrY5J2U13_oGmzpoaYyRhsvWato",
+      authDomain: "superchat-login-site.firebaseapp.com",
+      databaseURL: "https://superchat-login-site.firebaseio.com",
+      projectId: "superchat-login-site",
+      storageBucket: "superchat-login-site.appspot.com",
+      messagingSenderId: "278349844290",
+      appId: "1:278349844290:web:e3bcbb5098adf92dc982db"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script>
+    let database = firebase.database();
 
     //window.onload = login();
 
     function login() {
-        function newLoginHappened(user) {
-            if(user) {
-                // User is signed in.
-                app(user);
-            } else {
-                var provider = new firebase.auth.GoogleAuthProvider();
-                //firebase.auth().signInWithRedirect(provider);
+      function newLoginHappened(user) {
+        if (user) {
+          // User is signed in.
+          app(user);
+        } else {
+          var provider = new firebase.auth.GoogleAuthProvider();
+          //firebase.auth().signInWithRedirect(provider);
 
-                firebase.auth().signInWithPopup(provider).then(function(result) {
-                    // This gives you a Google Access Token. You can use it to access the Google API.
-                    var token = result.credential.accessToken;
-                    // The signed-in user info.
-                    var user = result.user;
-                    // ...
-                    }).catch(function(error) {
-                    // Handle Errors here.
-                    var errorCode = error.code;
-                    var errorMessage = error.message;
-                    // The email of the user's account used.
-                    var email = error.email;
-                    // The firebase.auth.AuthCredential type that was used.
-                    var credential = error.credential;
-                    // ...
-                    });
-            }
+          firebase.auth().signInWithPopup(provider).then(function (result) {
+            // This gives you a Google Access Token. You can use it to access the Google API.
+            var token = result.credential.accessToken;
+            // The signed-in user info.
+            var user = result.user;
+            // ...
+          }).catch(function (error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            // The email of the user's account used.
+            var email = error.email;
+            // The firebase.auth.AuthCredential type that was used.
+            var credential = error.credential;
+            // ...
+          });
         }
+      }
 
-        firebase.auth().onAuthStateChanged(newLoginHappened);
+      firebase.auth().onAuthStateChanged(newLoginHappened);
     }
 
     function logout() {
-        firebase.auth().signOut().then(function() {
-            // Sign-out successful.
-            document.getElementById("logoutButton").style.display="none";
-            document.getElementById("loginButton").style.displayName="block";
-            location.reload();
-            }).catch(function(error) {
-            // An error happened.
-            });
+      firebase.auth().signOut().then(function () {
+        // Sign-out successful.
+        document.getElementById("logoutButton").style.display = "none";
+        document.getElementById("loginButton").style.displayName = "block";
+        location.reload();
+      }).catch(function (error) {
+        // An error happened.
+      });
     }
 
     function app(user) {
-        // user.displayName
-        // user.email
-        // user.photoURL
-        // user.uid
-        document.getElementById("clientName").innerHTML = user.displayName;
-        //document.getElementById("inpAvsender").innerHTML = user.displayName;
-        document.getElementById("clientPhoto").setAttribute("src", user.photoURL);
-        document.getElementById("divChat").style.display="block";
-        document.getElementById("logoutButton").style.display="block";
-        document.getElementById("loginButton").style.display="none";
+      // user.displayName
+      // user.email
+      // user.photoURL
+      // user.uid
+      document.getElementById("clientName").innerHTML = user.displayName;
+      //document.getElementById("inpAvsender").innerHTML = user.displayName;
+      document.getElementById("clientPhoto").setAttribute("src", user.photoURL);
+      document.getElementById("divChat").style.display = "block";
+      document.getElementById("logoutButton").style.display = "block";
+      document.getElementById("loginButton").style.display = "none";
 
-        chatter(user.displayName);
+      chatter(user.displayName);
     }
 
     function chatter(u) {
-        let meldinger = database.ref("meldinger");
+      let meldinger = database.ref("meldinger");
 
-        let skjema = document.getElementById("skjema");
+      let skjema = document.getElementById("skjema");
 
-        //let inpAvsender = document.getElementById("inpAvsender");
-        //let inpAvsender = document.getElementById("testUsername");
-        //inpAvsender = u;
-        let inpAvsender = u;
+      //let inpAvsender = document.getElementById("inpAvsender");
+      //let inpAvsender = document.getElementById("testUsername");
+      //inpAvsender = u;
+      let inpAvsender = u;
 
-        let inpMening = document.getElementById("inpMening");
+      let inpMening = document.getElementById("inpMening");
 
-        let txtMeldinger = document.getElementById("txtMeldinger");
+      let txtMeldinger = document.getElementById("txtMeldinger");
 
-        function visMelding(snapshot) {
+      function visMelding(snapshot) {
 
         let melding = snapshot.val();
 
@@ -232,18 +242,18 @@
         var element = document.getElementById("txtMeldinger");
         element.prepend(para);
 
-        }
+      }
 
-        function regNyMelding(evt) {
+      function regNyMelding(evt) {
 
         evt.preventDefault();
 
         let nyMelding = {
 
-        avsender: inpAvsender,
+          avsender: inpAvsender,
 
-        tekst: inpMening.value,
-        epost: firebase.auth().currentUser.email
+          tekst: inpMening.value,
+          epost: firebase.auth().currentUser.email
 
         };
 
@@ -251,18 +261,14 @@
 
         inpMening.value = "";
 
-        }
+      }
 
-        meldinger.on("child_added", visMelding);
+      meldinger.on("child_added", visMelding);
 
-        skjema.onsubmit = regNyMelding;  
+      skjema.onsubmit = regNyMelding;
     }
-
-
-
   </script>
 
 </body>
+
 </html>
-
-
