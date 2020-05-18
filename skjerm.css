@@ -2,8 +2,11 @@ html {
 	margin: 0;
 	padding: 0;
 	color: #000000;
-	background-color: #333333;
+	background: #34495e;
 	font: normal 20px "Trebuchet MS", "Lucida Grande", Verdana, Georgia, Sans-Serif;
+	font-family: Montserrat, Arial, Helvetica, sans-serif;
+	font-weight: 700;
+  
 }
 
 
@@ -16,7 +19,7 @@ h6 {
 	font-weight: normal;
 	margin: 0;
 	padding: 10px 0;
-	color: #779955;
+	color: white;
 }
 
 h1 {
@@ -40,30 +43,11 @@ h6 {
 	font-size: 17px;
 }
 
-#upvote {
-	width: 20px;
-	background-color: white;
-	color: black;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-}
-
-#downvote {
-	width: 20px;
-	background-color: white;
-	color: black;
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
-	-moz-transition: 0.3s;
-	text-align: center;
-}
-
 button {
-	background: #000;
+	background: #34495e;
 	color: #FFF;
-	border: 1px solid #000;
-	border-radius: 5px;
+	border: 1px solid white;
+	border-radius: 15px;
 	padding: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -114,6 +98,9 @@ dd {
 	border-bottom: 1px dotted #555555;
 }
 
+.secFresh {
+	word-break: break-all;
+}
 .secInnlegg {
 	display: inline;
 	opacity: 1;
