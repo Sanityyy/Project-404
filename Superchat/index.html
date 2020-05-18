@@ -21,6 +21,10 @@
     * {
       overflow-x: hidden;
     }
+    body {
+      background: #34495e;
+      font-family: Montserrat, Arial, Helvetica, sans-serif;
+    }
 
     #divChat {
       display: none;
@@ -33,7 +37,7 @@
     #logoutButton {
       display: none;
     }
-
+/*
     .buttonStyle {
       background: #000;
       color: #FFF;
@@ -52,12 +56,27 @@
     }
 
     .buttonStyle:hover {
-      background: rgba(255, 255, 255, 1);
+      background: rgba(255, 255, 255, 0);
       color: #000;
       border: 1px solid #000;
       cursor: pointer;
     }
+*/
+    .btn {
+      background: rgba(0, 0, 0, 0);
+      color: #fff;
+      font-weight: bold;
+      border: 1.5px solid #fff;
+      border-radius: 0.75rem;
+      padding: 0.75rem 1.25rem;
+      transition: all 0.3s ease-in-out;
+    }
 
+    .btn:hover {
+      font-weight: bold;
+      color: #000;
+      background: #fff;
+    }
     .messageStyle {
       width: 95vw;
       border: 2px solid #dedede;
@@ -69,6 +88,13 @@
       margin-right: auto;
 
       word-break: break-all;
+    }
+    .hello {
+      color: #fff;
+    }
+    #clientName {
+      color: #fff;
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -93,9 +119,9 @@
   </div>
 -->
 
-  <button class="buttonStyle" id="loginButton" onclick="login()">Sign in with Google Account</button>
-  <button class="buttonStyle" id="logoutButton" onclick="logout()">Logout</button>
-  <h1>Hello <span id="clientName"></span></h1>
+  <button class="btn" id="loginButton" onclick="login()">Sign in with Google Account</button>
+  <button class="btn" id="logoutButton" onclick="logout()">Logout</button>
+  <h1 class="hello" >Hello <span id="clientName"></span></h1>
   <img id="clientPhoto" src="">
   <!--<p id="testUsername">test: </p>-->
 
