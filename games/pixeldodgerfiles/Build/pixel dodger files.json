@@ -1,0 +1,13 @@
+{
+"companyName": "DefaultCompany",
+"productName": "pixel dodger",
+"dataUrl": "pixel dodger files.data.unityweb",
+"wasmCodeUrl": "pixel dodger files.wasm.code.unityweb",
+"wasmFrameworkUrl": "pixel dodger files.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
