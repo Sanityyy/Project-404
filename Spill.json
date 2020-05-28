@@ -15,40 +15,33 @@
                 "picture": "Assets/mario.png",
                 "link": "games/Mario/index.html"
             },
-            "Et Eller Annent": {
-                "Navn": "Et Eller Annent",
+            "pixel dodger": {
+                "Navn": "pixel dodger",
                 "Creator": "Filip",
-                "nummer": "3"
+                "nummer": "3",
+                "picture": "Assets/pixeldodgerICON.png",
+                "link": "http://localhost/pixeldodgerfiles/index.html"
             },
-            "Filip2": {
-                "Navn": "Filip2",
+            "Smash Balls": {
+                "Navn": "Smash Balls",
                 "Creator": "Filip",
-                "nummer": "4"
+                "nummer": "4",
+                "picture": "Assets/SmashBallsICON.png",
+                "link": "http://localhost/SmashBalls/index.html"
             },
-            "Filip3": {
-                "Navn": "Filip3",
+            "Ping Pong": {
+                "Navn": "Ping Pong",
                 "Creator": "Filip",
-                "nummer": "5"
+                "nummer": "5",
+                "picture": "Assets/PingPongGAMEICON.png",
+                "link": "http://localhost/PingPongGAME/index.html"
             },
-            "Filip4": {
-                "Navn": "Filip4",
+            "Pinball": {
+                "Navn": "Pinball",
                 "Creator": "Filip",
-                "nummer": "6"
-            },
-            "Filip5": {
-                "Navn": "Filip5",
-                "Creator": "Filip",
-                "nummer": "7"
-            },
-            "Filip6": {
-                "Navn": "Filip6",
-                "Creator": "Filip",
-                "nummer": "8"
-            },
-            "Filip7": {
-                "Navn": "Filip7",
-                "Creator": "Filip",
-                "nummer": "9"
+                "nummer": "6",
+                "picture": "Assets/PinballICON.png",
+                "link": "http://localhost/PinballGameTIP/index.html"
             }
         }
     }
